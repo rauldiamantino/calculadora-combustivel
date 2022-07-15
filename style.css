@@ -13,29 +13,45 @@ body {
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.titulo h1 {
+    display: flex;
+    padding-left: 10px;
+    font-size: 1.5em;    
+}
+
 .conteudo {
     display: flex;
-    flex-direction: column;
-    width: 90vw;
-    max-width: 500px;
-    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+    max-width: 100%;
     padding: 30px;
-    padding-bottom: 60px;
-    line-height: 1.5em;
+    margin: auto;
+}
+
+.conteudo1 {
+    padding-top: 20px;
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    text-align: justify;
 }
 
 .conteudo1-img {
     width: 40px;
     height: 40px;
-}
-
-.conteudo1-titulo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.5em;    
-    padding-bottom: 20px;
 }
 
 .conteudo1-subtitulo {
@@ -50,11 +66,11 @@ body {
 .conteudo2 {
     display: flex;
     flex-direction: column;
-    height: 450px;
     justify-content: center;
     align-items: center;
     background-color: rgba(2, 140, 132, 0.17);
     border-radius: 30px;    
+    padding: 40px;
 }
 
 .conteudo2-imagem {
@@ -75,7 +91,7 @@ body {
 
 .conteudo2-titulo {
     font-size: 1.1em;
-    padding: 30px;
+    padding: 15px 10px 10px 10px;
 }
 
 .conteudo2-formulario {
@@ -85,13 +101,14 @@ body {
 }
 
 .conteudo2-formulario-texto {
-    height: 30px;
     width: 55vw;
+    font-size: 16px;
     max-width: 350px;
+    padding: 20px;
 }
 
 .conteudo2-formulario-botao {
-    height: 30px;
+    padding: 20px;
     background-color: rgba(0, 72, 113, 0.89);
     color: white;
     border: none;   
@@ -101,4 +118,16 @@ body {
 
 .conteudo2-formulario-botao:hover {
     background-color: rgba(0, 72, 113, 0.822);
+}
+
+#resultado {
+    display: none;
+    width: 55vw;
+    max-width: 350px;
+    background-color: rgb(22, 22, 22);
+    margin: 10px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    padding: 10px;
 }
