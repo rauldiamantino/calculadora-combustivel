@@ -183,7 +183,16 @@ footer {
           height: 100vh;
      }
 
+     #resultContainer {
+     flex-direction: column;
+     }
+
      #calculatorForm {
           max-width: 100%;
      }     
+
+     #prevButton  {
+          margin-top: 10px;
+          width: 100%;
+     }
 }
